@@ -9,6 +9,7 @@ export default function Cadastro() {
   const [mensagem, setMensagem] = useState('');
   const router = useRouter();
   const [formData, setFormData] = useState<TipoCadastro>({
+    idUsuario: 0,
     id_usuario: 0,
     nome: '',
     email: '',
@@ -27,6 +28,7 @@ export default function Cadastro() {
 
       if (response.ok) {
         setFormData({
+          idUsuario: 0,
           id_usuario: 0,
           nome: '',
           email: '',
