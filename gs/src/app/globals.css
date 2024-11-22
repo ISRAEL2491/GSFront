@@ -458,4 +458,586 @@
       @apply text-sm;
     }
   }
+  /* ESTILIZAÇÃO A PÁGINA CALCULADORA*/
+
+@layer components {
+  .calculadora_economia h1 {
+      @apply flex justify-start items-start ml-5 mt-5 text-[45px];
+  }
+
+  .resultado_calculadora h2 {
+      @apply flex justify-start items-start ml-5 text-[30px];
+  }
+
+  .calculadora_economia p,
+  .resultado_calculadora p {
+      @apply flex justify-start items-start ml-5 text-left text-[20px];
+  }
+
+  /* Seção de formulário */
+  .formulario-calculadora {
+      @apply w-full max-w-lg mx-auto p-8 mt-10 bg-white rounded-lg shadow-md border border-gray-200;
+  }
+
+  /* Legenda do formulário */
+  .formulario-calculadora legend {
+      @apply text-xl font-semibold text-green-700 mb-4;
+  }
+
+  /* Divs do campo */
+  .form-calculadora div {
+      @apply mb-6;
+  }
+
+  /* Labels dos campos */
+  .form-calculadora label {
+      @apply block text-gray-700 font-medium mb-2;
+  }
+
+  /* Campos de entrada */
+  .form-calculadora input[type="number"] {
+      @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600;
+  }
+
+  /* Botão de envio */
+  .form-calculadora .botao-calcular {
+      @apply w-full bg-green-600 text-white font-semibold py-3 rounded-md hover:bg-green-700 transition;
+  }
+
+  /* Alinhamento centralizado */
+  .form-calculadora .center {
+      @apply flex justify-center;
+  }
+
+  /* Estilo do botão de envio */
+  .calcular {
+      @apply w-full mt-3 py-4 bg-[#81b622] text-center text-white font-semibold rounded-md transition-colors hover:bg-[#3d550c];
+  }
+}
+
+/* Estilos responsivos */
+
+/* Telas menores que 900px (dispositivos móveis) */
+@media (max-width: 900px) {
+  .calculadora_economia h1,
+  .resultado_calculadora h2 {
+      @apply text-[30px] ml-3;
+  }
+
+  .calculadora_economia p,
+  .resultado_calculadora p {
+      @apply text-[16px] ml-3;
+  }
+
+  .formulario-calculadora {
+      @apply p-4 shadow-md max-w-full;
+  }
+
+  .formulario-calculadora legend {
+      @apply text-[18px];
+  }
+
+  .form-calculadora div {
+      @apply mb-4;
+  }
+
+  .form-calculadora input[type="number"] {
+      @apply p-2 text-[14px];
+  }
+
+  .form-calculadora .botao-calcular {
+      @apply py-2 text-[16px];
+  }
+
+  .calcular {
+      @apply py-3 text-[16px];
+  }
+}
+
+/* Telas entre 650px e 1024px (tablets e dispositivos médios) */
+@media (min-width: 650px) and (max-width: 1024px) {
+  .calculadora_economia h1 {
+      @apply text-[40px];
+  }
+
+  .resultado_calculadora h2 {
+      @apply text-[25px];
+  }
+
+  .calculadora_economia p,
+  .resultado_calculadora p {
+      @apply text-[18px];
+  }
+
+  .formulario-calculadora {
+      @apply p-6 shadow-lg;
+  }
+
+  .formulario-calculadora legend {
+      @apply text-[20px];
+  }
+
+  .form-calculadora div {
+      @apply mb-5;
+  }
+
+  .form-calculadora input[type="number"] {
+      @apply p-3 text-[16px];
+  }
+
+  .form-calculadora .botao-calcular {
+      @apply py-3 text-[18px];
+  }
+
+  .calcular {
+      @apply py-4 text-[18px];
+  }
+}
+
+/* Telas maiores que 1025px (desktop) */
+@media (min-width: 1025px) {
+  .calculadora_economia h1 {
+      @apply text-[50px] ml-5 mt-5;
+  }
+
+  .resultado_calculadora h2 {
+      @apply text-[30px] ml-5;
+  }
+
+  .calculadora_economia p,
+  .resultado_calculadora p {
+      @apply text-[20px] ml-5;
+  }
+
+  .formulario-calculadora {
+      @apply p-8 shadow-xl;
+  }
+
+  .formulario-calculadora legend {
+      @apply text-[24px];
+  }
+
+  .form-calculadora div {
+      @apply mb-6;
+  }
+
+  .form-calculadora input[type="number"] {
+      @apply p-4 text-[18px];
+  }
+
+  .form-calculadora .botao-calcular {
+      @apply py-3 text-[20px];
+  }
+
+  .calcular {
+      @apply py-4 text-[20px];
+  }
+}
+
+
+/* ESTILIZAÇÃO A PÁGINA DE PROJETOS*/
+
+@layer components {
+  .introducao_projetos h1 {
+      @apply flex justify-start items-start ml-5 mt-5 text-[45px];
+  }
+
+  .introducao_projetos p,
+  .projetos_exemplos p,
+  .fim_projetos p {
+      @apply flex justify-start items-start ml-5 text-left text-[20px];
+  }
+
+  .projetos_exemplos {
+      @apply flex justify-center items-center;
+  }
+
+  .projeto_um, 
+  .projeto_dois,
+  .projeto_tres {
+      @apply flex-col justify-center items-center m-3 p-3 border-solid border-[4px] rounded-[5px] border-[#3d550c] bg-[#3d550c] text-[#81b622] text-justify;
+  }
+
+  .btn_p_um  a,
+  .btn_p_dois a,
+  .btn_p_tres a {
+      @apply flex justify-center items-center text-center px-14;
+  }
+
+  .projeto_um h3, 
+  .projeto_dois h3,
+  .projeto_tres h3 {
+      @apply flex justify-center items-center m-3 p-5 border-solid border-[2px] rounded-[5px] border-[#3d550c] bg-white text-black text-justify;
+  }
+}
+
+/* Estilos responsivos */
+
+/* Telas menores que 900px (dispositivos móveis) */
+@media (max-width: 900px) {
+  .introducao_projetos h1 {
+      @apply text-[30px] ml-3;
+  }
+
+  .introducao_projetos p,
+  .projetos_exemplos p,
+  .fim_projetos p {
+      @apply text-[16px] ml-3;
+  }
+
+  .projetos_exemplos {
+      @apply flex-col items-center; /* Empilha os projetos em vez de manter eles na mesma linha */
+  }
+
+  .projeto_um, 
+  .projeto_dois,
+  .projeto_tres {
+      @apply w-full max-w-xs m-2 p-3 border-[2px] border-[#3d550c] bg-[#3d550c] text-[#81b622] text-center; /* Reduz a largura e aplica centralização */
+  }
+
+  .btn_p_um  a,
+  .btn_p_dois a,
+  .btn_p_tres a {
+      @apply px-8 py-2; /* Ajuste no tamanho do botão */
+  }
+
+  .projeto_um h3, 
+  .projeto_dois h3,
+  .projeto_tres h3 {
+      @apply m-2 p-3 text-center; /* Centraliza o título */
+  }
+}
+
+/* Telas entre 650px e 1024px (tablets e dispositivos médios) */
+@media (min-width: 650px) and (max-width: 1024px) {
+  .introducao_projetos h1 {
+      @apply text-[35px];
+  }
+
+  .introducao_projetos p,
+  .projetos_exemplos p,
+  .fim_projetos p {
+      @apply text-[18px];
+  }
+
+  .projetos_exemplos {
+      @apply flex-row justify-center items-center w-[95%] pl-10; /* Mantém a linha, mas com espaçamento adaptado */
+  }
+
+  .projeto_um, 
+  .projeto_dois,
+  .projeto_tres {
+      @apply max-w-sm m-3 p-4 border-[3px] border-[#3d550c] bg-[#3d550c] text-[#81b622] text-center;
+  }
+
+  .btn_p_um  a,
+  .btn_p_dois a,
+  .btn_p_tres a {
+      @apply px-10 py-3; /* Ajuste nos botões */
+  }
+
+  .projeto_um h3, 
+  .projeto_dois h3,
+  .projeto_tres h3 {
+      @apply m-3 p-4;
+  }
+}
+
+/* Telas maiores que 1025px (desktop) */
+@media (min-width: 1025px) {
+  .introducao_projetos h1 {
+      @apply text-[45px];
+  }
+
+  .introducao_projetos p,
+  .projetos_exemplos p,
+  .fim_projetos p {
+      @apply text-[20px];
+  }
+
+  .projetos_exemplos {
+      @apply flex-row justify-center; /* Mantém os projetos em linha com espaçamento ideal */
+  }
+
+  .projeto_um, 
+  .projeto_dois,
+  .projeto_tres {
+      @apply w-[30%] m-3 p-5 border-[4px] border-[#3d550c] bg-[#3d550c] text-[#81b622] text-center;
+  }
+
+  .btn_p_um  a,
+  .btn_p_dois a,
+  .btn_p_tres a {
+      @apply px-14 py-4;
+  }
+
+  .projeto_um h3, 
+  .projeto_dois h3,
+  .projeto_tres h3 {
+      @apply m-3 p-5 text-center;
+  }
+}
+
+
+
+/* ESTILIZAÇÃO A PÁGINA DOS PROJETOS JA IMPLANTADOS */
+@layer components {
+  .p_um h1,
+  .p_dois h1,
+  .p_tres h1 {
+      @apply flex justify-start items-start ml-5 mt-5 text-[45px];
+  }
+
+  .p_um p,
+  .p_dois p,
+  .p_tres p {
+      @apply flex justify-start items-start ml-5 text-left text-[20px];
+  }
+}
+
+/* Estilos responsivos */
+
+/* Telas menores que 900px (dispositivos móveis) */
+@media (max-width: 900px) {
+  .p_um h1,
+  .p_dois h1,
+  .p_tres h1 {
+      @apply text-[30px] ml-3;
+  }
+
+  .p_um p,
+  .p_dois p,
+  .p_tres p {
+      @apply text-[16px] m-3;
+  }
+}
+
+/* Telas entre 650px e 1024px (tablets e dispositivos médios) */
+@media (min-width: 650px) and (max-width: 1024px) {
+  .p_um h1,
+  .p_dois h1,
+  .p_tres h1 {
+      @apply text-[35px];
+  }
+
+  .p_um p,
+  .p_dois p,
+  .p_tres p {
+      @apply text-[18px];
+  }
+}
+
+/* Telas maiores que 1025px (desktop) */
+@media (min-width: 1025px) {
+  .p_um h1,
+  .p_dois h1,
+  .p_tres h1 {
+      @apply text-[45px];
+  }
+
+  .p_um p,
+  .p_dois p,
+  .p_tres p {
+      @apply text-[20px];
+  }
+}
+
+
+/* ESTILIZAÇÃO A PÁGINA LOGIN */
+@layer components {
+    /* Estilização do Wrapper do Login */
+    .wrapper {
+      @apply flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6;
+    }
   
+    /* Estilo do Título */
+    .login_h2 {
+      @apply text-3xl font-semibold text-center text-[#3d550c] mb-8;
+    }
+  
+    /* Estilo da área de entrada de dados */
+    .input-area {
+      @apply w-full max-w-md bg-white p-8 rounded-lg shadow-lg;
+    }
+  
+    /* Estilo dos inputs */
+    .input-area input {
+      @apply w-full p-4 mb-4 text-gray-700 border border-[#3d550c] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3d550c];
+    }
+  
+    /* Estilo do botão de login */
+    .b_login {
+      @apply w-full p-4 bg-[#81b622] text-white font-semibold rounded-md transition-colors hover:bg-[#3d550c] focus:ring-2 focus:ring-[#3d550c];
+    }
+  
+    /* Estilo do link de cadastro */
+    .f_cadastro {
+      @apply text-[#81b622] underline hover:text-[#3d550c];
+    }
+  
+    /* Estilização da mensagem de erro ou sucesso */
+    .erro {
+      @apply text-red-500 text-center mt-4;
+    }
+  
+    .sucesso {
+      @apply text-green-500 text-center mt-4;
+    }
+  }
+  
+
+/* ESTILIZAÇÃO A PÁGINA CADASTRO */
+@layer components {
+    /* Estilo da página de cadastro */
+    .cadastro-page {
+      @apply flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6;
+    }
+  
+    /* Estilo do título da página */
+    .cadastro_h2 {
+      @apply text-3xl font-semibold text-center text-[#3d550c] mb-8;
+    }
+  
+    /* Estilo do formulário de cadastro */
+    .input-area {
+      @apply w-full max-w-md bg-white p-8 rounded-lg shadow-lg;
+    }
+  
+    /* Estilo dos campos de entrada (input) */
+    .input-area input {
+      @apply w-full p-4 mb-4 text-gray-700 border border-[#3d550c] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3d550c];
+    }
+  
+    /* Estilo do botão de cadastro */
+    .b_cadastro {
+      @apply w-full p-4 bg-[#81b622] text-white font-semibold rounded-md transition-colors hover:bg-[#3d550c] focus:ring-2 focus:ring-[#3d550c];
+    }
+  
+    /* Estilo do link de login */
+    .f_login {
+      @apply text-[#81b622] underline hover:text-[#3d550c];
+    }
+  
+    /* Estilo das mensagens de erro ou sucesso */
+    .erro {
+      @apply text-red-500 text-center mt-4;
+    }
+  
+    .sucesso {
+      @apply text-green-500 text-center mt-4;
+    }
+  }
+
+/* ESTILIZAÇÃO PAGINA DE DICAS */
+@layer components{
+  .dicas h1{
+        @apply flex justify-start items-start ml-5 mt-5 text-[45px]
+    }
+
+    .dicas h2{
+        @apply flex justify-start items-start ml-5 text-[30px]
+    }
+
+    .dicas p{
+        @apply flex justify-start items-start ml-5 text-left text-[20px]
+    }
+}
+
+/* ESTILIZAÇÃO PAGINA PERFIL */
+@layer components {
+  .editar-excluir-page {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6;
+  }
+
+  .editar-excluir-page h2 {
+    @apply text-3xl font-semibold text-center text-[#3d550c] mb-8;
+  }
+
+  .editar-excluir-page p {
+    @apply text-3xl font-semibold text-center text-[#3d550c] mb-8;
+  }
+
+  .excluir {
+    @apply w-full mt-2 p-4 bg-[#81b622] text-center text-white font-semibold rounded-md transition-colors hover:bg-[#3d550c] focus:ring-2 focus:ring-[#3d550c];
+  }
+
+  .atualiza {
+    @apply w-full p-4 bg-[#81b622] text-center text-white font-semibold rounded-md transition-colors hover:bg-[#3d550c] focus:ring-2 focus:ring-[#3d550c];
+  }
+}
+
+/* Estilos responsivos */
+
+/* Telas menores que 900px (dispositivos móveis) */
+@media (max-width: 900px) {
+  .editar-excluir-page h2,
+  .editar-excluir-page p {
+    @apply text-2xl; /* Reduzindo o tamanho do título e parágrafo para se adequar a telas pequenas */
+  }
+
+  .excluir,
+  .atualiza {
+    @apply p-3; /* Reduzindo o padding para um botão mais compacto */
+  }
+}
+
+/* Telas entre 650px e 1024px (tablets e dispositivos médios) */
+@media (min-width: 650px) and (max-width: 1024px) {
+  .editar-excluir-page h2,
+  .editar-excluir-page p {
+    @apply text-2xl; /* Tamanho de texto ajustado para telas médias */
+  }
+
+  .excluir,
+  .atualiza {
+    @apply p-4; /* Botões com padding maior para telas médias */
+  }
+}
+
+/* Telas maiores que 1025px (desktop) */
+@media (min-width: 1025px) {
+  .editar-excluir-page h2,
+  .editar-excluir-page p {
+    @apply text-3xl; /* Tamanho original mantido em telas grandes */
+  }
+
+  .excluir,
+  .atualiza {
+    @apply p-4; /* Botões com padding original */
+  }
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+@layer components {
+    footer {
+      @apply bg-[#3d550c] mt-20 m-[10px] p-[10px] text-[#81b622] text-center;
+    }
+  
+    footer ul li {
+      @apply text-white;
+    }
+  
+    footer img {
+      @apply w-[80px];
+    }
+  
+    footer h2 {
+      @apply font-bold text-[40px];
+    }
+  
+    .fiap,
+    .eco {
+      @apply flex flex-row justify-center text-[30px];
+    }
+  
+    .redes_sociais {
+      @apply flex justify-center items-center px-5;
+    }
+  
+    .face img,
+    .insta img,
+    .git img {
+      @apply px-5 pt-5;
+    }
+  }
