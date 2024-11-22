@@ -30,8 +30,8 @@ const Participantes = () => {
         {/* Card do Lucas */}
         <div className="participante-card">
           {/* <Image alt="Lucas" src={Luketa} className="participante-imagem" /> */}
-          <p className="participante-nome">Luketa</p>
-          <p className="participante-rm">RM: ??????</p>
+          <p className="participante-nome">Lucas</p>
+          <p className="participante-rm">RM:557957</p>
           <p>
             <Link href="https://github.com/luketa02496" target="_blank">GitHub</Link>
           </p>
@@ -44,7 +44,7 @@ const Participantes = () => {
         <div className="participante-card">
           {/* <Image alt="Marcos" src={Marcos} className="participante-imagem" /> */}
           <p className="participante-nome">Marcos Vinicius</p>
-          <p className="participante-rm">RM: ??????</p>
+          <p className="participante-rm">RM:558054</p>
           <p>
             <Link href="https://github.com/MARCOSBISP" target="_blank">GitHub</Link>
           </p>

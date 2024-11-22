@@ -46,7 +46,7 @@ export const Rodape = () => {
                   target="_blank" 
                   rel="noopener" 
                   title="GitHub" 
-                  href="https://github.com"
+                  href="https://github.com/ISRAEL2491/GSFront"
                 >
                   GITHUB
                 </Link>
@@ -65,7 +65,7 @@ export const Rodape = () => {
             <h3>Úteis</h3>
             <ul>
               <li>
-                <Link href="/sobre">Sobre Nós</Link>
+                <Link href="/participantes">Sobre Nós</Link>
               </li>
               <li>
                 <p>Política de Privacidade</p>
