@@ -1,0 +1,461 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border no-underline;
+    }
+
+    body {
+        @apply bg-white text-gray-800 font-sans;
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+/* Estilização do conteúdo principal da página */
+@layer components {
+  /* Título principal da página */
+  .home h1 {
+      @apply text-4xl font-bold text-blue-900 mb-4 text-center mt-4;
+  }
+
+  /* Descrição da plataforma NeoEnergy */
+  .home p {
+      @apply text-lg text-gray-700 mb-6 text-center px-4;
+  }
+
+  /* Seção de dicas */
+  .dicas {
+      @apply mt-8 px-6 py-6 bg-gray-200 rounded-lg shadow-md;
+  }
+
+  .dicas h2 {
+      @apply text-2xl font-semibold text-blue-900 mb-2;
+  }
+
+  .dicas p {
+      @apply text-lg text-gray-600 mb-4;
+  }
+
+  .dicas a {
+      @apply text-lg text-blue-700 hover:text-blue-900 transition-colors;
+  }
+
+  /* Seção de equipe */
+  .nossa-equipe {
+      @apply mt-12 px-6 py-6 bg-gray-200 rounded-lg shadow-md;
+  }
+
+  .nossa-equipe h2 {
+      @apply text-2xl font-semibold text-blue-900 mb-2;
+  }
+
+  .nossa-equipe p {
+      @apply text-lg text-gray-600 mb-4;
+  }
+
+  .nossa-equipe a {
+      @apply text-lg text-blue-700 hover:text-blue-900 transition-colors;
+  }
+}
+
+@layer components {
+    /* Estilização do cabeçalho */
+    .cabecalho {
+        @apply bg-white shadow-md;
+    }
+  
+    .menu {
+        @apply flex justify-center items-center px-6 py-4;
+    }
+  
+    nav ul {
+        @apply flex space-x-6;
+    }
+  
+    nav li {
+        @apply text-lg text-gray-700;
+    }
+  
+    nav a {
+        @apply font-bold text-blue-900 hover:text-blue-500 transition-colors;
+    }
+  
+    /* Hover e foco nos links */
+    nav a:hover {
+        @apply text-blue-900;
+    }
+  
+    /* Para links ativos */
+    nav a.active {
+        @apply text-blue-900 font-semibold;
+    }
+}
+
+/* Estilização do conteúdo da página de cadastro */
+@layer components {
+    /* Container do registro */
+    .register-container {
+        @apply max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg mt-8;
+    }
+  
+    /* Título do formulário */
+    .register-title {
+        @apply text-3xl font-bold text-blue-900 mb-6 text-center;
+    }
+  
+    /* Estilo do formulário */
+    .register-form {
+        @apply flex flex-col gap-4;
+    }
+  
+    /* Estilo dos inputs */
+    .form-input {
+        @apply p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+    }
+  
+    /* Estilo do botão de cadastro */
+    .register-button {
+        @apply mt-4 p-3 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors;
+    }
+  
+    /* Estilo da mensagem de erro ou sucesso */
+    .register-message {
+        @apply mt-4 text-center text-lg;
+    }
+  
+    .message-success {
+        @apply text-green-500;
+    }
+  
+    .message-error {
+        @apply text-red-500;
+    }
+  
+    /* Rodapé com link para login */
+    .register-footer {
+        @apply text-center text-gray-700 mt-4;
+    }
+  
+    .login-link {
+        @apply text-blue-700 hover:text-blue-900 transition-colors;
+    }
+  }
+
+ /* Estilos principais da página */
+@layer components {
+    /* Título principal */
+    .titulo-dicas {
+      
+    
+  @apply py-5 text-4xl font-bold text-blue-900 mb-8 text-center;
+    }
+  
+    /* Seção de dicas */
+    
+    
+  .dica {
+      @apply bg-gray-100 p-6 mb-6 rounded-lg shadow-md;
+    }
+  
+    /* Título de cada dica */
+    .dica h2 {
+      @apply text-2xl font-semibold text-blue-900 mb-2;
+    }
+  
+    /* Descrição de cada dica */
+    .dica p {
+      @apply text-lg text-gray-700;
+    }
+  
+    /* Separação entre as dicas */
+    .dica:not(:last-child) {
+      @apply mb-6;
+    }
+  
+    
+    }
+  /* Estilos de links e interatividade */
+    
+    .
+  .dica a {
+      @apply text-blue-700 hover:text-blue-900 transition-colors;
+    }
+  
+    
+   
+  /* Contêiner geral */
+    .dicas-container {
+      @apply max-w-screen-md mx-auto p-4;
+    }
+
+/* Estilos principais da página */
+@layer components {
+    /* Título da seção de participantes */
+    .titulo-participantes {
+        @apply text-4xl font-bold text-blue-900 text-center my-8;
+    }
+  
+    /* Contêiner de todos os cards */
+    .participantes {
+        @apply grid grid-cols-3 gap-6 px-4;
+    }
+  
+    /* Card de cada participante */
+    .participante-card {
+        @apply bg-white m-10 p-10 rounded-lg shadow-lg text-center transition-all hover:shadow-2xl;
+    }
+  
+    /* Nome do participante */
+    .participante-nome {
+        @apply text-2xl font-semibold text-blue-800 mb-2;
+    }
+  
+    /* RM do participante */
+    .participante-rm {
+        @apply text-lg text-gray-600 mb-4;
+    }
+  
+    /* Links do participante */
+    .participante-card a {
+        @apply text-blue-600 hover:text-blue-800 transition-colors block mb-2;
+    }
+  
+    /* Estilo das imagens (se forem usadas) */
+    .participante-imagem {
+        @apply w-full h-40 object-cover rounded-lg mb-4;
+    }
+
+    /* Responsividade para tablets */
+    @media (max-width: 1024px) {
+        .participantes {
+            @apply grid-cols-2; /* 2 colunas em tablets */
+        }
+
+        .participante-card {
+            @apply m-6 p-6; /* Menor margem e padding em tablets */
+        }
+
+        .participante-imagem {
+            @apply h-32; /* Ajusta a altura das imagens */
+        }
+    }
+
+    /* Responsividade para smartphones */
+    @media (max-width: 768px) {
+        .titulo-participantes {
+            @apply text-3xl; /* Ajusta o tamanho do título em smartphones */
+        }
+
+        .participantes {
+            @apply grid-cols-1; /* 1 coluna em smartphones */
+        }
+
+        .participante-card {
+            @apply m-4 p-4; /* Menor margem e padding em smartphones */
+        }
+
+        .participante-imagem {
+            @apply h-24; /* Ajusta a altura das imagens */
+        }
+    }
+
+    /* Responsividade para desktops */
+    @media (min-width: 1025px) {
+        .participantes {
+            @apply grid-cols-3; /* 3 colunas em desktops */
+        }
+    }
+}
+
+  
+/* Estilos principais da página */
+@layer components {
+    /* Título da página */
+    .titulo {
+      @apply text-3xl font-bold text-blue-900 text-center my-6;
+    }
+  
+    /* Formulário para edição e exclusão */
+    .input-area {
+      @apply max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg;
+  
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    /* Estilo para os labels */
+    .input-area label {
+      @apply text-gray-700 font-semibold;
+    }
+  
+    /* Estilo para os campos de input */
+    .input-area input {
+      @apply border-2 border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400;
+    }
+  
+    /* Botão de atualização */
+    .atualiza button {
+      @apply bg-blue-900 text-white p-3 rounded-md hover:bg-blue-700 transition-all;
+    }
+  
+    /* Botão de exclusão */
+    .excluir button {
+      @apply bg-red-900 text-white p-3 rounded-md hover:bg-red-700 transition-all;
+    }
+  
+    /* Mensagem de feedback */
+    .mensagem-sucesso {
+      @apply text-green-600 font-semibold text-center mt-4;
+    }
+  
+    .mensagem-erro {
+      @apply text-red-600 font-semibold text-center mt-4;
+    }
+  
+    /* Link para voltar para a página inicial */
+    .login {
+      @apply text-center mt-6;
+    }
+  
+    .voltar-perfil {
+      @apply text-blue-600 hover:text-blue-800 transition-colors;
+    }
+  }
+
+/* Estilização do conteúdo da página de login */
+@layer components {
+    /* Container do login */
+    .login-container {
+      @apply max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg mt-8;
+    }
+  
+    /* Título do login */
+    .login-title {
+      @apply text-3xl font-bold text-blue-900 mb-6 text-center;
+    }
+  
+    /* Estilo do formulário de login */
+    .login-form {
+      @apply flex flex-col gap-4;
+    }
+  
+    /* Estilo dos inputs do login */
+    .login-input {
+      @apply p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+    }
+  
+    /* Estilo do botão de login */
+    .login-button {
+      @apply mt-4 p-3 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors;
+    }
+  
+    /* Estilo do texto abaixo do formulário */
+    .login-text {
+      @apply text-center text-gray-700 mt-4;
+    }
+  
+    /* Estilo dos links */
+    .login-link {
+      @apply text-blue-700 hover:text-blue-900 transition-colors;
+    }
+  
+    /* Estilo da mensagem de erro ou sucesso */
+    .login-message {
+      @apply mt-4 text-center text-lg;
+    }
+  
+    .message-success {
+      @apply text-green-500;
+    }
+  
+    .message-error {
+      @apply text-red-500;
+    }
+  }
+
+/* Estilização do rodapé */
+@layer components {
+    .rodape {
+      @apply bg-blue-900 text-white p-6 mt-8 w-full;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  
+    /* Título do rodapé */
+    .rodape h2 {
+      @apply text-3xl font-bold text-center mb-6;
+    }
+  
+    /* Links das redes sociais */
+    .social-media-links {
+      @apply flex justify-center gap-8;
+    }
+  
+    .social-media-item {
+      @apply text-center;
+    }
+  
+    .social-media-item a {
+      @apply text-white hover:text-blue-500 font-semibold text-lg transition-colors;
+    }
+  
+    .social-media-item ul {
+      @apply list-none;
+    }
+  
+    .social-media-item li {
+      @apply mb-4;
+    }
+  
+    /* Seção de informações adicionais */
+    .additional-info {
+      @apply mt-8 text-center text-white;
+    }
+  
+    .company-info, .useful-links, .contact-info {
+      @apply mb-8;
+    }
+  
+    .company-info h3, .useful-links h3, .contact-info h3 {
+      @apply text-2xl font-semibold mb-4;
+    }
+  
+    .company-info p {
+      @apply text-lg text-gray-300;
+    }
+  
+    .useful-links ul {
+      @apply list-none;
+    }
+  
+    .useful-links li {
+      @apply mb-2;
+    }
+  
+    .useful-links a {
+      @apply text-white hover:text-blue-500;
+    }
+  
+    .contact-info p {
+      @apply text-lg text-gray-300;
+    }
+  
+    /* Rodapé final */
+    .rodape-footer {
+      @apply mt-8 text-center text-gray-400;
+    }
+  
+    .rodape-footer p {
+      @apply text-sm;
+    }
+  }
+  
