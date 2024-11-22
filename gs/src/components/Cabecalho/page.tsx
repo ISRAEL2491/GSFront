@@ -12,6 +12,7 @@ export const Cabecalho = () => {
               <li><Link href="/cadastro">Cadastro</Link></li>
               <li><Link href="/login">Login</Link></li>
               <li><Link href="/perfil">Perfil</Link></li>
+              <li><Link href="/conta">Conta</Link></li>
             </ul>
           </nav>
         </div>
